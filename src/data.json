@@ -1,0 +1,12 @@
+{
+    "products":[
+        {
+            "_id": "dress1",
+        "title": "Dress 1",
+        "image": "/images/dress1.jpg",
+        "description": "about dress 1",
+        "price": 19,
+        "availableSizes": ["XL", "XXL"]
+    }
+    ]
+}
