@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html{
   font-size: 62.5%;
@@ -15,7 +15,7 @@ input,
 select, 
 button,
 textarea{
-  font-family: Monserrat, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size:  1.6rem;
 }
 
@@ -79,6 +79,7 @@ footer{
 /*Products*/
 .products{
   display: flex;
+  flex-wrap: wrap; /*hizo unas columnas unas abajo de otras*/
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -87,10 +88,10 @@ footer{
 }
 
 .products li{
-  flex: 1 1 29rem;
+  flex: 0 1 29rem; /*el cero es para q esten derechos misma distancia*/
   height: 47rem ;
   padding: 1rem;
-  margin: 1rem;
+  /*margin: 1rem;*/
 }
 
 .product{
@@ -127,8 +128,7 @@ footer{
   border: 0.1rem #808080 solid;
 }
 .button-primary{
-  background-color: #ffc000;
-
+  background-color: goldenrod;
 }
 
 /*Filter*/
@@ -165,9 +165,9 @@ display: flex;
   display: flex;
 }
 .cart-items li div {
-  padding: 0.5rem;
+  padding: .5rem;
 }
-.cart-item li div:last-child{
+.cart-items li div:last-child{
   flex:1;
 }
 .right{
@@ -197,10 +197,13 @@ form{
   padding: 0;
   list-style-type: none;
 }
-.form-container li{
+.form-container li {
 display: flex;
 flex-direction: column;
 padding: 1rem;
+}
+ul{
+  list-style-type: none;
 }
 
 input{

@@ -99,7 +99,7 @@ export default class Cart extends Component {
                       <li>
                         <label>Name</label>
                         <input
-                          type="name"
+                          name="name"
                           type="text"
                           required
                           onChange={this.handleInput}
@@ -108,7 +108,7 @@ export default class Cart extends Component {
                       <li>
                         <label>Adress</label>
                         <input
-                          type="adress"
+                          name="adress"
                           type="text"
                           required
                           onChange={this.handleInput}
